@@ -26,10 +26,10 @@ int main()
     }
     cout<<endl;
 
-    //reverse elements of list
+    //reverse the elements of the list
     LI.reverse();
 
-    cout<<"All elements of List LI are after reversing: " <<endl;
+    cout<<"All the elements of List LI are after reversing: " <<endl;
     for(it = LI.begin();it!=LI.end();it++)
     {
          cout<<*it<<" ";
