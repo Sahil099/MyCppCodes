@@ -5,6 +5,7 @@ int main()
 {
     list <int> LI;
     list <int>::iterator it;
+    
     //inserts elements at end of list
     LI.push_back(4);
     LI.push_back(5);
@@ -20,6 +21,7 @@ int main()
     LI.insert(it,1);
 
     cout<<"All elements of List LI are: " <<endl;
+    
     for(it = LI.begin();it!=LI.end();it++)
     {
         cout<<*it<<" ";
@@ -30,6 +32,7 @@ int main()
     LI.reverse();
 
     cout<<"All elements of List LI are after reversing: " <<endl;
+    
     for(it = LI.begin();it!=LI.end();it++)
     {
          cout<<*it<<" ";
@@ -40,6 +43,7 @@ int main()
     LI.remove(5);
 
     cout<<"Elements after removing all occurence of 5 from List"<<endl;
+    
     for(it = LI.begin();it!=LI.end();it++)
     {
          cout<<*it<<" ";
@@ -48,7 +52,9 @@ int main()
 
     //removes last element from list
     LI.pop_back();
+    
     //removes first element from list
     LI.pop_front();
+   
     return 0;
 }
